@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+
+		<title>Kwitter</title>
+
+		<!--links Firebase-->
+		<script src="https://www.gstatic.com/firebasejs/7.6.2/firebase-app.js"></script>
+		<script src="https://www.gstatic.com/firebasejs/7.6.2/firebase-firestore.js"></script>
+		<script src="https://www.gstatic.com/firebasejs/live/3.1/firebase.js"></script>
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+
+		<!--link do Google Fonts-->
+		<link href="https://fonts.googleapis.com/css?family=Yeon+Sung&display=swap" rel="stylesheet"><meta name="viewport" content="width=device-width, initial-scale=1">
+
+		<!--links de Bootstrap-->
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+
+		<!--link do arquivo style-->
+		<link rel="stylesheet" type="text/css" href="style.css">
+
+	</head>
+
+	<body>
+
+		<div class="container">
+
+			<button id="logout" onclick="logout();" class="glyphicon glyphicon-log-out btn btn-danger">Sair</button>
+	
+			<center>
+		
+				<h1 class="header">	
+
+					Kwitter	
+					<sup>
+						<img src="m2.png">
+					</sup>
+				</h1>
+
+				<div id="output" style="text-align: left;margin-bottom: 70px;"> </div>
+	
+			</center>
+
+		</div>
+
+		<center>
+	
+			<div class="input_div_message_page">
+		
+				<label>Enviar:</label>		
+				<input type="text" id="msg" class="form-control" placeholder="Mensagem">
+				<button onclick="send()" class="btn btn-success">Enviar</button>
+	
+			</div>
+
+		</center>
+
+		<!--link do arquivo JS-->
+		<script src="kwitter_page.js"></script>
+
+	</body>
+
+</html>
